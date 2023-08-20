@@ -42,4 +42,27 @@ const courseData = [
   },
 ];
 
-export { DarkLogo, LightLogo, MobileHero, TabletHero, DesktopHero, courseData };
+const heroImages = [
+  {
+    img: MobileHero,
+    styles: 'block md:hidden max-h-[301px] max-w-[327px]',
+  },
+  {
+    img: TabletHero,
+    styles: 'hidden md:block lg:hidden max-h-[640px] max-w-[640px]',
+  },
+  {
+    img: DesktopHero,
+    styles: 'hidden lg:block max-h-[936px] max-w-[990px]',
+  },
+];
+
+export {
+  DarkLogo,
+  LightLogo,
+  MobileHero,
+  TabletHero,
+  DesktopHero,
+  courseData,
+  heroImages,
+};

@@ -5,7 +5,11 @@ const Navbar = () => {
   return (
     <header className='container flex justify-between items-center mt-3'>
       <Logo mode='dark' />
-      <Button text='Get Started' color='bg-purple hover:bg-light-purple' />
+      <Button
+        text='Get Started'
+        color='bg-purple hover:bg-light-purple'
+        url='/'
+      />
     </header>
   );
 };

@@ -1,8 +1,15 @@
 import { Link } from 'react-router-dom';
 
-const CourseCard = ({ img, title, desc, url }) => {
+type CourseCardProps = {
+  img: string;
+  title: string;
+  desc: string;
+  url: string;
+};
+
+const CourseCard = ({ img, title, desc, url }: CourseCardProps) => {
   return (
-    <div className='px-7 shadow-card rounded-[10px] mt-10 py-10 bg-white md:w-[45%] md:max-h-[260px] lg:w-[30%] lg:md:max-h-[280px] lg:flex lg:flex-col lg:justify-between'>
+    <div className='px-7 shadow-card rounded-[10px] mt-10 py-10 bg-white md:w-[45%] md:max-h-[260px] lg:w-[30%] lg:max-h-[320px] lg:flex lg:flex-col lg:justify-between'>
       <div className='relative'>
         <img className='mb-6 absolute top-[-65px]' src={img} alt={title} />
       </div>

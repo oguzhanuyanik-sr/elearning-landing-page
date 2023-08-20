@@ -1,9 +1,7 @@
 import Button from './common/Button';
 import Logo from './common/Logo';
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <footer className='bg-purple'>
       <div className='container flex justify-between items-center py-7'>
@@ -11,6 +9,7 @@ const Footer = (props: Props) => {
         <Button
           text='Get Started'
           color='bg-gradient-purple hover:bg-gradient-purple-hover'
+          url='/'
         />
       </div>
     </footer>
