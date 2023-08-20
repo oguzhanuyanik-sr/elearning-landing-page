@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-jakarta text-purple overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .font-heading {
+    @apply font-extrabold text-purple;
+  }
+  .font-heading-xl {
+    @apply text-[56px] leading-[70px];
+  }
+  .font-heading-l {
+    @apply text-[40px] leading-[51px];
+  }
+  .font-heading-m {
+    @apply text-[32px] leading-[40px];
+  }
+  .font-heading-xl {
+    @apply text-[24px] leading-[28px];
+  }
+
+  .font-body {
+    @apply text-light-gray;
+  }
+  .font-body-m {
+    @apply font-medium text-[18px] leading-[28px];
+  }
+  .font-body-s {
+    @apply font-bold text-[16px] leading-[28px];
+  }
+}

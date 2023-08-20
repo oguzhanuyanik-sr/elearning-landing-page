@@ -9,25 +9,33 @@ export default {
       xl: '1280px',
     },
     colors: {
-      blue: '#345ff6',
-      darkGray: '#253347',
-      gray: '#5e6e85',
-      lightGray: '#d8e2e7',
+      'light-purple': '#666ca3',
+      purple: '#13183f',
+      'light-gray': '#83869a',
+      'dark-pink': '#f74780',
+      'light-pink': '#ffa7c3',
       white: '#ffffff',
     },
     fontFamily: {
-      inter: ['Inter', 'sans-serif'],
+      jakarta: ['Plus Jakarta Sans', 'sans-serif'],
     },
     extend: {
       boxShadow: {
-        dark: '0 0 4px 2px rgba(0,0,0,0.1)',
-        light: '16px 32px 56px rgba(143, 174, 207, 0.15)',
-        customBlue: '0 0 0px 8px rgba(52, 95, 246, 0.25)',
+        card: '0px 25px 50px rgba(6, 22, 141, 0.0442381)',
+      },
+      backgroundImage: {
+        'gradient-gray': 'linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%)',
+        'gradient-pink': 'linear-gradient(322deg, #F02AA6, #FF6F48)',
+        'gradient-pink-hover':
+          'linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5), #FF6F48 0%, #F02AA6 100%)',
+        'gradient-purple': 'linear-gradient(237deg, #4851FF, #F02AA6)',
+        'gradient-purple-hover':
+          'linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5), #4851FF -54.32%, #F02AA6 100%)',
       },
     },
     container: {
       center: true,
-      padding: '2rem',
+      padding: '1rem',
       screens: {
         sm: '640px',
         md: '768px',
